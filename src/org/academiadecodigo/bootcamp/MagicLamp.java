@@ -33,15 +33,22 @@ public class MagicLamp {
         }
     }
 
-    public void recharge(Demon demon) {
+    public void recharge(Genie genie) {
 
-        if (!demon.getRecycled()) {
-            recharged++;
-            remainingGenies = numGenies;
-            demon.setRecycled();
-            System.out.println("You recycled the Demon, so your Magic Lamp now returned to have " + remainingGenies + " genies.");
+        if (genie.isEvil() == true) {
+            Demon genieDemon = (Demon) genie;
+
+
+            if (!genieDemon.getRecycled()) {
+                recharged++;
+                remainingGenies = numGenies;
+                genieDemon.setRecycled();
+                System.out.println("You recycled the Demon, so your Magic Lamp now returned to have " + remainingGenies + " genies.");
+            } else {
+                System.out.println("You have already recycled this Demon, you can not recharge again the lamp.");
+            }
         } else {
-            System.out.println("You have already recycled this Demon, you can not recharge again the lamp.");
+            System.out.println("Your are not a Demon, you can not recycle the lamp.");
         }
 
     }

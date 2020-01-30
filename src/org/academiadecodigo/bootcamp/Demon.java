@@ -9,6 +9,7 @@ public class Demon extends Genie {
 
         super(maxWishes);
         recycled = false;
+        //super.setEvil(true);
     }
 
     @Override
@@ -30,6 +31,11 @@ public class Demon extends Genie {
     public void setRecycled() {
 
             recycled = true;
+    }
+
+    @Override
+    public boolean isEvil() {
+        return true;
     }
 
 

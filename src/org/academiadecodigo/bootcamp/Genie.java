@@ -4,10 +4,12 @@ public class Genie {
 
     private int maxWishes;
     private int grantedWishes;
+    //private boolean isEvil;
 
     public Genie (int maxWishes) {
         this.maxWishes = maxWishes;
         grantedWishes = 0;
+        //isEvil = false;
     }
 
     public void grantWish() {
@@ -22,5 +24,17 @@ public class Genie {
 
         return grantedWishes;
     }
+
+    public boolean isEvil() {
+        return false;
+    }
+
+    /*public void setEvil(boolean isEvil) {
+         this.isEvil = isEvil;
+    }
+
+    public boolean getIsEvil() {
+        return isEvil;
+    }*/
 
 }

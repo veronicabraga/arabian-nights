@@ -27,10 +27,11 @@ public class Main {
         genie4.grantWish();
 
         // I can not use the genie4, that is a Demon, to recharge the lamp.
-        //lamp1.recharge(genie4);
+        lamp1.recharge(genie3);
+        lamp1.recharge(genie4);
 
 
-        Demon demon = new Demon(3);
+        /*Demon demon = new Demon(3);
         lamp1.recharge(demon);
         lamp1.recharge(demon);
         Demon demon2 = new Demon(3);
@@ -39,7 +40,7 @@ public class Main {
         lamp1.recharge(demon2);
 
         lamp1.getRemainingGenies();
-        lamp1.getRecharged();
+        lamp1.getRecharged();*/
 
 
 
