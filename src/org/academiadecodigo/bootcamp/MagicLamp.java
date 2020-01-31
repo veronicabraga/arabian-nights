@@ -35,7 +35,7 @@ public class MagicLamp {
 
     public void recharge(Genie genie) {
 
-        if (genie.isEvil() == true) {
+        if (genie.isEvil()) {
             Demon genieDemon = (Demon) genie;
 
 
@@ -61,6 +61,13 @@ public class MagicLamp {
     public int getRecharged() {
         System.out.println("Your Magic Lamp has been recharged " + recharged + " time(s).");
         return recharged;
+    }
+
+
+    public boolean equals(MagicLamp lamp) {
+
+        return lamp.numGenies == numGenies && lamp.remainingGenies == remainingGenies && lamp.recharged == recharged;
+
     }
 
 

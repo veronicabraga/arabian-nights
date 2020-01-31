@@ -5,9 +5,14 @@ public class Main {
     public static void main(String[] args) {
 
         MagicLamp lamp1 = new MagicLamp(3);
-
-
+        MagicLamp lamp2 = new MagicLamp(3);
+        System.out.println(lamp1.equals(lamp2));
         Genie genie1 = lamp1.rubbed(3);
+        genie1.grantWish();
+        System.out.println(lamp1.equals(lamp2));
+
+
+        //Genie genie1 = lamp1.rubbed(3);
         //Genie genie2 = lamp1.rubbed(3);
 
         /*genie1.grantWish();
