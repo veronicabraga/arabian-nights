@@ -26,9 +26,14 @@ public class Main {
         genie4.grantWish();
         genie4.grantWish();
 
+        genie3.grantWish();
+
         // I can not use the genie4, that is a Demon, to recharge the lamp.
         lamp1.recharge(genie3);
         lamp1.recharge(genie4);
+        lamp1.recharge(genie4);
+        lamp1.getRecharged();
+        lamp1.getRemainingGenies();
 
 
         /*Demon demon = new Demon(3);

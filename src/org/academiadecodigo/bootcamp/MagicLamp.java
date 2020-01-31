@@ -59,7 +59,7 @@ public class MagicLamp {
     }
 
     public int getRecharged() {
-        System.out.println("Your Magic Lamp has been recharged " + recharged + " times.");
+        System.out.println("Your Magic Lamp has been recharged " + recharged + " time(s).");
         return recharged;
     }
 
